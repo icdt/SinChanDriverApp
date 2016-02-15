@@ -1,0 +1,50 @@
+﻿<ion-view view-title="" hide-back-button="false">
+    <ion-nav-title>
+        派車紀錄歷程
+    </ion-nav-title>
+    <ion-content>
+        <div class="padding">
+            <button class="button button1 button-positive" ng-click="prev()">上個月</button>
+            &nbsp;
+            <button class="button button3 button-positive" ng-click="this()">今月</button>
+            &nbsp;
+            <button class="button button1 button-positive" ng-click="next()">下個月</button>
+            <h2>2016年1月</h2>
+        </div>
+        <div class="list">
+            <div class="item item-divider">
+                <img ng-src="images/unread.png" />
+                <div class="title">未讀</div>
+            </div>
+            <a class="item item-thumbnail-left item-icon-right animated bounceInLeft" ui-sref="m.historydetail">
+                <img src="images/order.png">
+                <!--<i class="icon ion-ios-paper-outline"></i>-->
+                <h2>201601200001</h2>
+                <p>範例公司</p>
+                <p class="status">訂單_已完成</p>
+                <div class="read red">未讀</div>
+                <i class="icon ion-chevron-right"></i>
+            </a>
+            <div class="item item-divider">
+                <img ng-src="images/read.png" />
+                <div class="title">已讀</div>    
+            </div>
+            <a class="item item-thumbnail-left item-icon-right animated bounceInLeft" ui-sref="m.historydetail">
+                <img src="images/order.png">
+                <h2>201601200002</h2>
+                <p>範例公司</p>
+                <p class="status">訂單_已完成</p>
+                <div class="read green">已讀</div>
+                <i class="icon ion-chevron-right"></i>
+            </a>
+            <a class="item item-thumbnail-left item-icon-right animated bounceInLeft" ui-sref="m.historydetail">
+                <img src="images/order.png">
+                <h2>201601200003</h2>
+                <p>範例公司</p>
+                <p class="status">訂單_已完成</p>
+                <div class="read green">已讀</div>
+                <i class="icon ion-chevron-right"></i>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

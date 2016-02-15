@@ -1,0 +1,78 @@
+﻿<ion-view view-title="" hide-back-button="false">
+    <ion-nav-title>
+        派車紀錄明細
+    </ion-nav-title>
+    <ion-content>
+        <div class="list">
+            <div class="item item-divider">
+                <div class="title">訂單狀態</div>             
+            </div>
+            <label class="item item-input">
+                <span class="input-label">訂單編號</span>
+                201601200001
+            </label>
+            <label class="item item-input">
+                <span class="input-label">訂單建立時間</span>
+                2016-01-12
+            </label>
+            <label class="item item-input">
+                <span class="input-label">狀態</span>
+                訂單_司機確認中
+            </label>
+
+            <div class="item item-divider">
+                <div class="title">客戶資訊</div>               
+            </div>
+            <label class="item item-input">
+                <span class="input-label">派車客戶</span>
+                範例公司
+            </label>
+            <label class="item item-input">
+                <span class="input-label">提貨時間</span>
+                16:30 ~ 20:00
+            </label>
+            <label class="item item-input">
+                <span class="input-label">提貨公司</span>
+                資雲數位科技有限公司
+            </label>
+            <label class="item item-input item-icon-right">
+                <span class="input-label">電話</span>
+                <span class="tel">07-5317768</span>
+                <a href="#" onclick="window.location.href='tel:075317768';" class="button button-clear"><i class="icon ion-ios-telephone"></i></a>
+            </label>
+            <label class="item item-input  item-icon-right">
+                <span class="input-label">地址</span>
+                <span class="address">高雄市鹽埕區七賢三路123號3樓C室</span>
+                <button class="button button-clear" ng-click="vm.openModel()"><i class="icon ion-map"></i></button>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">倉儲</span>
+                CA,CW
+            </label>
+            <label class="item item-input">
+                <span class="input-label">備註</span>
+                Test
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button2 button-assertive" ng-click="refuse()">拒絕</button>
+            &nbsp;
+            <button class="button button1 button-positive" ng-click="save()">接受</button>
+        </div>
+    </ion-content>
+</ion-view>
+
+<script id="map/model.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar align-title="center" class="bar bar-header bar-stable">
+            <h1 class="title">Google地圖</h1>
+            <button class="button button-clear" ng-click="vm.closeModel()"><i class="icon ion-close-circled"></i></button>
+        </ion-header-bar>
+        <ion-content>
+            <div id="addressgmapid" class="gmap" data-tap-disabled="true"></div>
+            <div class="padding">
+                高雄市鹽埕區七賢三路號3樓C室             
+            </div>
+        </ion-content>
+    </ion-modal-view>
+</script>

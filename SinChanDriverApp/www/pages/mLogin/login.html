@@ -1,0 +1,26 @@
+﻿<ion-view view-title="" hide-back-button="true">
+    <ion-nav-title>
+        <img ng-src="images/logo.png" />
+    </ion-nav-title>
+    <ion-content>
+        <div class="list card">
+            <div class="item item-divider">
+               <img ng-src="images/lock.png" />
+               <div class="title">系統登入</div>
+            </div>
+            <label class="item item-input item-icon-right">
+                <span class="input-label">帳號</span>
+                <i class="icon ion-ios-person placeholder-icon"></i>
+                <input type="text" placeholder="使用者帳號">
+            </label>
+            <label class="item item-input item-icon-right">
+                <span class="input-label">密碼</span>
+                <i class="icon ion-ios-locked placeholder-icon"></i>
+                <input type="password" placeholder="使用者密碼">
+            </label>
+            <label class="item">
+                <button class="button button1 button-block button-positive icon ion-log-in" ng-click="login()">&nbsp;登入</button>
+            </label>
+        </div>
+    </ion-content>
+</ion-view>
